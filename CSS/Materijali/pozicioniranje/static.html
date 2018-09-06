@@ -1,0 +1,38 @@
+<html>
+	<head>
+		<title> Staticko pozicioniranje </title>
+		<style type="text/css">
+			
+			#prvi{
+				height: 200px;
+				width: 400px;
+				background-color: rgb(3, 134, 101); 	
+			}
+
+			#drugi{
+				height: 200px;
+				width: 400px;
+				background-color: rgb(134, 3, 42);
+				/* 
+					podrazumevani nacin pozicioniranja
+					 pravila top, left, right i bottom ne uticu na poziciju elementa 
+				*/
+				position:static;
+				left: 100px;
+			}
+
+			#treci{
+				height: 200px;
+				width: 400px;
+				background-color: rgb(148, 153, 6);
+			}
+
+		</style>
+	</head>
+
+	<body>
+		<div id='prvi'></div>
+		<div id='drugi'></div>
+		<div id='treci'></div>
+	</body>
+</html>

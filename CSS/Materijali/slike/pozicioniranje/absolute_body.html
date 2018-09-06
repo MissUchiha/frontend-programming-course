@@ -1,0 +1,36 @@
+<html>
+	<head>
+		<title> pozicioniranje: apsolutno </title>
+		<style type="text/css">
+			#prvi{
+				height: 100px;
+				width: 300px;
+				background-color: #919922; 
+			}
+
+			#drugi{
+				height: 100px;
+				width: 300px;
+				background-color: #C1164C;
+				/* element se pozicionira u odnosu na prvog nestatickog roditelja (roditelja cije je pozicioniranje razlicito od static) */
+				/* u nasem slucaju to je body */
+				position:absolute;
+				top: 30px;
+				left: 80px;				
+			}
+
+			#treci{
+				height: 100px;
+				width: 300px;
+				background-color: #292B0A;
+			}
+
+		</style>
+	</head>
+
+	<body>
+		<div id='prvi'></div>
+		<div id='drugi'></div>
+		<div id='treci'></div>
+	</body>
+</html>

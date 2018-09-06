@@ -1,0 +1,49 @@
+<html>
+	<head>
+		<title> Apsolutno pozicioniranje </title>
+		<style type="text/css">
+
+			#omotac{
+				height: 600px;
+				width: 600px;
+				background-color: rgb(255, 235, 122);
+				position: relative;
+			}
+
+			#prvi{
+				height: 200px;
+				width: 400px;
+				background-color: rgb(3, 134, 101); 
+			}
+
+			#drugi{
+				height: 200px;
+				width: 400px;
+				background-color: rgb(134, 3, 42);
+				/* 
+					element se pozicionira u odnosu na prvog roditelja
+					cije je pozicioniranje razlicito od static
+					u nasem slucaju to je div sa id=omotac
+			 	*/
+				position:absolute;
+				top: 50px;
+				left: 50px;				
+			}
+
+			#treci{
+				height: 200px;
+				width: 400px;
+				background-color: rgb(148, 153, 6);
+			}
+
+		</style>
+	</head>
+
+	<body>
+		<div id='omotac'>
+			<div id='prvi'></div>
+			<div id='drugi'></div>
+			<div id='treci'></div>
+		</div>
+	</body>
+</html>

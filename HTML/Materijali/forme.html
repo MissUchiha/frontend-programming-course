@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Form</title>
+    </head>
+    <body>
+        <form action="" method="GET">
+            <fieldset>
+                <legend>Izmenite vas nalog</legend>
+                <p>
+                    <label for="ime">Ime:</label> <br>
+                    <input type="text" name="ime" id="ime">
+                </p>
+
+                <p>
+                    <label for="prezime">Prezime:</label> <br>
+                    <input type="text" name="prezime" id="prezime">
+                </p>
+                <p>
+                    Pol: <br>
+                    <input type="radio" name="muski" value="muski" id="muski"><label for="muski"> Muski </label><br>
+                    <input type="radio" name="zenski" value="zenski" id="zenski"><label for="zenski"> Zenski </label><br>
+                </p>
+                <p>
+                    <label for="pass">Password:</label><input type="password" name="pass" id="pass">
+                </p>
+                <p>
+                    <label for="slika">Slika:</label> <input type="file" name="slika" id="slika">
+                </p>
+
+                <p>
+                    <label for="zemlja">Zemlja</label>
+                    <select name="zemlja" id="zemlja">
+                        <optgroup label="Evropa">
+                            <option value="Nmemacka">Nemacka</option>
+                            <option value="Austrija">Austrija</option>
+                            <option value="Svajcarska">Francuska</option>
+                        </optgroup>
+                        <optgroup label="Severna amerika">
+                            <option value="SAD">SAD</option>
+                            <option value="Canada">Canada</option>
+                        </optgroup>
+                    </select>
+                </p>
+                <p>
+                    <label for="bio">Biografija</label>
+                    <textarea name="bio" id="bio" cols="15" rows="5"></textarea></p>
+                <p>
+                    <input type="checkbox" name="tos" id="tos"><label for="tos">I accept terms</label>
+                </p>
+                <p>
+                    <input type="submit" value="Posalji">
+                    <input type="reset" value="Resetuj">
+                </p>
+
+            </fieldset>
+        </form>
+    </body>
+</html>

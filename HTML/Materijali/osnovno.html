@@ -1,0 +1,123 @@
+<!-- Doctype deklaracija, početak svakog html dokumenta, ovo ispod je primer u html5 -->
+<!DOCTYPE html>
+<!-- HTML tag okružuje html dokument -->
+<html lang="en">
+    <!-- HEAD tag - u njemu se nalaze uglavnom informacije o tome kako dokument treba da se prikaže -->
+    <head>
+        <!-- 
+            Meta tagovi daju dodatne informacije o dokumentu, 
+            često su u njima informacije namenjene spoljnim programima 
+            (ne browseru) koji stranicu pregledaju (npr. internet pretraživači) 
+        -->
+        <meta charset="UTF-8">
+
+        <!-- 
+            Naslov stranice, title je obavezan tag, 
+            svaka stranica bi trebalo da ima minimum html, head, body i title tagove,
+            svi ti navedeni tagovi bi trebalo da budu jedinstveni u HTML dokumentu 
+        -->
+        <title>Osnovno</title>
+    </head>
+
+    <!-- Unutar BODY taga se nalazi sadržaj dokumenta -->
+    <body>
+
+        <!-- Tagovi h1,h2,h3,h4,h5 i h6 se koriste za naslove, h1 je najveći h6 je najmanji-->
+        <h1>Najveći naslov</h1>
+        <h2>Naslov</h2>
+        <h3>Naslov</h3>
+        <h4>Naslov</h4>
+        <h5>Naslov</h5>
+        <h6>Naslov</h6>
+
+        <h2>P tag</h2>
+        <!-- Paragraf teksta označavamo P tagom -->
+        <p>Ovo je paragraf</p>
+
+        <h2>Br tag</h2>
+        <!-- U html nove redove pišemo sa br tagom -->
+        <br>Za novi red koristimo br<br> tag<br>
+
+        <h2>Beline tj. razmaci</h2>
+        <!-- Razmaci u html-u -->
+        <p>Uzastopni razmaci u html se računaju kao jedan, pa će sledećih nekoliko paragrafa imati isti ispis iako u kodu izgledaju različito</p>
+
+        <p>jedan dva tri</p>
+        <p>jedan dva           tri</p>
+        <p>jedan
+        dva
+        tri</p>
+        <p>jedan           dva          tri</p>
+        <p>jedan                   dva            tri</p>
+
+        <h2>Hr tag</h2>
+        <!-- Horizontalnu liniju dodajemo pomoću HR taga -->
+        <hr>
+
+        <h2>Pre tag</h2>
+        <!-- Pre tag koristimo da prikažemo tekst koji hoćemo da html ne formatira  -->
+        <pre>Postoje slučajevi u kojima
+        se uzastopni                   razmaci u html-u prikazuju,
+        takođe i novi redovi i tabovi na ovaj način
+        se prikazuju i browser ih ne ignoriše.</pre>
+
+
+        <h2>Em tag</h2>
+        <!-- em tagom označavamo naglašen tekst (uglavnom se on prikazuje iskošeno) -->
+        <p>
+        Pozovite direktora <em>odmah</em>.
+        </p>
+
+        <h2>Strong tag</h2>
+        <!-- strong tagom označavamo jako važan tekst (uglavnom se on prikazuje podebljano) -->
+        <p>
+            Za to delo <strong>kazna je 10 godina zatvora</strong>. 
+        </p>
+            
+        
+        <!--
+        Napomena:
+
+        HTML je jezik koji služi za opisivanje strukture dokumenta, 
+        a CSS je jezik koji služi za opisivanje stila tj. izgleda.
+
+        STRONG tag se koristi da istakne važnost teksta koji je u njemu, 
+        a ne da bismo napravili da neki tekst bude podebljan.
+        Browser ga podrazumevano prikazuje kao podebljan tekst (bold)
+        ali videcemo kasnije da možemo preko css-a da ga formatiramo kako želimo.
+        Isto tako EM ne služi da bismo napravili iskošen tekst,
+        već za tekst koji hoćemo da naglasimo i posebno odvojimo iz konteksta.
+        Pravilo je da se svi HTML elementi koriste za strukturu 
+        i svi elementi koji se vide (svi osim title, head, script, link, style...) mogu da
+        izgledaju drugačije nego što je izgled koji im podrazumevano browser daje.
+        -->
+
+        <!-- Q tag nam služi za obeležavanje kratkih citata a Blockquote za duge citate. -->
+        <h2>Q tag</h2>
+        <q>Ja nemam neke posebne talente, samo sam jako radoznao.</q> Einstein
+
+        <h2>Blockquote tag</h2>
+        <blockquote>Sve su Drine ovog svijeta krive, nikada se one neće moći sve ni potpuno ispraviti,
+            nikada ne smijemo prestati da ih ispravljamo.</blockquote>        
+        Ivo Andrić 
+
+        <h2>Specijalni karakteri</h2>
+        
+        <p>
+            &lt;
+            <br>
+            &amp;
+            <br>
+            &copy;
+            <br>
+            &euro;
+        </p>
+
+        <h2>SUB i SUP tagovi</h2>
+        <p>
+            H<sub>2</sub>O 
+            <br><br>
+            E=Mc<sup>2</sup>
+        </p> 
+    </body>
+</html>

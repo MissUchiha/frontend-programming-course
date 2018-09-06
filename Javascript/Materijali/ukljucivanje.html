@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Javascript uključivanje</title>
+        <style>
+            .plavi {
+                background-color: lightskyblue;
+            }
+        </style>
+    </head>
+    <body>
+        
+        <!-- Ukljucivanje pomocu script taga koji moze da stoji bilo gde  -->
+        <script>
+            // Ovde kucamo Javascript kod
+            console.log('Ispisivanje poruke iz script taga.');
+        </script>
+        
+        <!-- Ukljucivanje pomoću atributa, ovaj način nije dobra praksa i nećemo koristiti -->
+        <p class="plavi" onclick="console.log('Ispisivanje poruke iz onclick')"> Ovo je paragraf</p>
+        
+        <!-- Ukljucivanje iz posebnog fajla -->
+        <script src="js/ukljucivanje.js"></script>
+    </body>
+</html>
+   

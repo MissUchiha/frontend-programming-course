@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mix</title>
+    <!-- 
+        Dodavanje favicona , inače link i meta tagovi imaju mnogo veoma različitih funkcija i treba videti svaku pojedinačno,
+        Href atribut link taga je uglavnom link na neki spoiljni resurs a rel atribut kaže u kakvoj je relaciji taj resurs u odnosu na trenutni dokument
+    -->
+    <link rel="shortcut icon" type="image/x-icon" href="Slike/favicon.ico">
+    <!-- Meta tag ima mnogo funkcija, ispod je naveden jedan primer -->
+    <meta name="description" content="Sadržaj meta description taga kaže internet pretraživačima šta želimo da stoji u rezultatima pretrage za ovu stranicu, oni ako procene da je sadržaj neodgovarajući mogu generisati svoju verziju">
+</head>
+    <body>
+        <h2>Iframe</h2>
+        <!-- Iframe tag koristimo da prikažemo jedan html dokument unutar drugog -->
+        <iframe src="linkovi.html"></iframe>
+        <h2>Embed</h2>
+        <!--
+            Embed se sve ređe koristi najčešći primer na koji ćete nailaziti je uključivanje flash fajlova,
+            takođe i object tag ćete viđati u sličnim situacijama, 
+            to su tagovi koje ćete retko pisati ali treba da ih prepoznate kad ih vidite.
+            U većini slučajeva browser je neophodno da ima instaliran određeni plugin da bi mogao da prikaže embedovan sadržaj. 
+        -->
+        <embed src="https://www.youtube.com/embed/DODLEX4zzLQ" ></embed>
+
+        <h2>Tagovi za grupisanje i strukturu</h2>
+        <p>
+            DIV, SPAN, SECTION, ARTICLE, HEADER, FOOTER, MAIN, ASIDE, NAV, BLOCKQUOTE, CODE- 
+            svi ti tagovi koriste se za grupisanje sekcija na stranici radi lakšeg praćenja.
+            To nisu jedini ali su najčešći od onih koje nismo pomenuli dosad.
+        </p>
+
+        <h2>Video</h2>
+        <video controls>
+                <source src="video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+        </video>
+
+        <h2>Audio</h2>
+
+        <audio controls>
+                <source src="audio.mp3" type="audio/mp3">
+                Your browser does not support the audio tag.
+        </audio>
+    </body>
+</html>

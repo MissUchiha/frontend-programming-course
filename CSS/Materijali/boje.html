@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> CSS boje  </title> 
+        <meta charset='UTF-8'>        
+        <link rel='stylesheet' href='css/boje_stil.css'>               
+    </head>
+    
+    <body>
+
+        <header> 
+            <h1> CSS boje </h1> 
+        </header>
+        
+        <main>
+            <p>
+                Boje možemo zadavati:
+                <ul>
+                    <li> 
+                        Imenima 
+                        <br><br>
+                        <span id="plava">ova boja je <pre>blue</pre></span> 
+                    </li>
+                    <li> 
+                        Kombinacijom crvene, zelene i plave 
+                        <br><br>
+                        <ul>
+                            <li>
+                                RGB format:
+                                <pre> rgb(jacina_crvene, jacina_zelene, jacina_plave)</pre>
+                                <span id="narandzasta">ova boja je <pre> rgb(255, 165, 0)</pre></span>
+                            </li>
+                            <li>
+                                RGBA format:
+                                <pre> rgba(jacina_crvene, jacina_zelene, jacina_plave, jacina_providnosti)</pre>
+                                <span id="narandzasta-providna">ova boja je <pre> rgba(255, 165, 0, 0.5)</pre></span>
+                            </li>   
+                            <li>
+                                HEX format:   
+                                <pre> #CCZZPP </pre>                                   
+                                CC - broj u heksadekadnom formatu koji definiše jačinu crvene
+                                <br>
+                                ZZ - broj u heksadekadnom formatu koji definiše jačinu zelene
+                                <br>
+                                PP - broj u heksadekadnom formatu koji definiše jačinu plave
+                                <br><br>
+                                <span id="crvena">ova boja je <pre> #ff0000 </pre></span>
+                            </li>
+                        </ul>                        
+                    </li>
+                    <li> 
+                        Kombinacijom nijanse, zasićenja i svetlosti 
+                        <br><br>
+                        <ul>
+                            <li>
+                                HSA format:
+                                <pre> hsa(nijasna, zasicenje, svetlost)</pre>
+                                <span id="zelena">ova boja je <pre> hsl(120, 100%, 25%)</pre></span> 
+                            </li>
+                            <li>
+                                HSLA format:
+                                <pre> hsla(nijasna, zasicenje, svetlost, jacina_providnosti)</pre>
+                                <span id="zelena-providna">ova boja je <pre> hsla(120, 100%, 25%, 0.5)</pre></span>  
+                            </li>   
+                        </ul>
+                    </li>
+                </ul> 
+            </p>
+        </main>
+        
+    </body>
+</html>

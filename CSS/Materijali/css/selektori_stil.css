@@ -1,0 +1,76 @@
+/* 
+    pravilo se primenjuje na sve tagove 
+*/
+* {
+    font-family:Arial;
+}
+/* 
+    pravilo se primenjuje na sve li tagove 
+*/
+li {
+    color: darkviolet;
+}
+/* 
+    pravilo se primenjuje na sve h4 i h3 tagove
+*/
+h4,h3 {
+    text-decoration: underline;
+}
+/* 
+    pravilo se primenjuje na sve em tagove 
+    koji su direktni potomci tagova div 
+*/
+div > em {
+    color: royalblue;
+}
+/* 
+    pravilo se primenjuje na sve em tagove 
+    koji su potomci tagova div 
+*/
+div em {
+    font-family: Georgia;
+}
+/* 
+    pravilo se primenjuje na tag
+    ciji je atribut id jednak 'tri' 
+*/
+#tri {
+    font-weight: bold;
+}
+/* 
+    pravilo se primenjuje na sve tagove 
+    koji imaju atribut class jednak 'centrirano'
+*/
+.centrirano {
+    text-align: center;
+}
+
+/*
+    sledeca dva pravila pokusavaju da se primene na isti element
+    (tag h4 koji ima id='ukljucivanje')
+    medjutim zbog prioriteta slaganja stilova
+    primenice se drugo pravilo jer je specificnije
+*/
+h4 {
+    color: orangered;
+}
+
+#ukljucivanje {
+    color: green;
+}
+
+.umanjeno {
+    text-transform: lowercase;
+}
+
+/*
+    postavljajuci vrednost nekog pravila na 'inherit'
+    nasledjujemo vrednost tog pravila od roditelja
+*/
+a {
+    text-transform: inherit;
+}
+
+footer .umanjeno {
+    color: darkgrey;
+}

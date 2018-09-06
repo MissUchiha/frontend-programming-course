@@ -1,0 +1,46 @@
+<html>
+	<head>
+		<title> pozicioniranje: absolute </title>
+		<style type="text/css">
+
+			#omotac{
+				height: 900px;
+				width: 400px;
+				background-color: #999;
+				
+			}
+
+			#prvi{
+				height: 100px;
+				width: 300px;
+				background-color: #919922; 
+			}
+
+			#drugi{
+				height: 100px;
+				width: 300px;
+				background-color: #C1164C;
+				/* element se pozicionira fiksno u odnosu na ekran - povrsinu koju korisnik vidi */
+				/* fiksiranost se ogleda u tome sto se sadrzaj moze "skrolovati" dok element ostaje nepokretan */
+				position:fixed;
+				top: 0px;
+				right: 0px;				
+			}
+
+			#treci{
+				height: 100px;
+				width: 300px;
+				background-color: #292B0A;
+			}
+
+		</style>
+	</head>
+
+	<body>
+		<div id='omotac'>
+			<div id='prvi'></div>
+			<div id='drugi'></div>
+			<div id='treci'></div>
+		</div>
+	</body>
+</html>

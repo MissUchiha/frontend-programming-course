@@ -1,0 +1,131 @@
+/*
+    popis koriscenih css svojstava: 
+    
+    kontrola velicine boksa
+    width
+    height
+    box-sizing
+
+    senke:
+    box-shadow 
+
+    kontrola prekoracenja:
+    overflow
+
+    kontrola margina:
+    margin
+    margin-left
+    margin-right
+    margin-bottom
+    margin-top
+
+    kontrola unutrasnjih margina
+    padding
+    padding-left
+    padding-right
+    padding-bottom
+    padding-right
+
+    kontrola okvira:
+    border
+    border-top
+    border-left
+    border-right
+    border-bottom
+    border-top-style
+    border-top-color
+    border-top-width
+    ....
+    border-radius
+    border-top-left-radius
+    border-top-right-radius
+    ....
+
+*/
+
+h1 {
+    text-align: center;
+    background-color: #6D98C1;
+    font-size: 50px;
+    color: white;
+    /* TODO: eksperimentisati sa razlicitim vrednostima providnosti - od 0 do 1 */
+    opacity: 1;
+}
+
+h3 {
+    text-align: center;    
+}
+
+p {
+    /*
+    leva i desna margina postavljene omogucavaju centriranje - 
+    preduslov je promeniti sirinu tako da bude manja od 100% 
+    */
+    
+    width: 800px;
+    margin-left:auto;
+    margin-right:auto;
+}
+p.mali {
+    
+    padding-left: 25px;
+    padding-right:25px;
+    padding-top: 10px;
+    padding-bottom:10px;
+
+    border-left: 1px dashed gray;
+    border-right: 1px dashed gray;
+    border-bottom: 1px solid gray;
+    border-top: 1px solid gray;
+}
+
+#prvi {
+    box-sizing: content-box;
+}
+
+#drugi {
+    box-sizing: padding-box;
+}
+
+#treci {
+    box-sizing: border-box;
+}
+
+#veliki{
+    border: 2px solid #AEF26B;
+    /* TODO: eksperimentisati sa razlicitim visinama bloka */ 
+    height: 100px;
+    overflow: auto;
+}      
+
+#kutije {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+p.kutije {
+    width: 200px;
+    border: 1px solid orangered;
+    /* TODO: eksperimentisati sa razlicitim vrednostima (inline, block, inline-block) */
+    display: inline-block;
+}
+
+body {
+    /*
+        TODO: eksperimentisati sa razlicitim vrednostima 
+        (repeat-x, repeat-y, no-repeat, repeat)
+        (center center, center top, center bottom, right center, right top, right bottom, left center, left top, left bottom)
+
+    */
+    background: url(slike/pozadina.png) no-repeat center top;
+}
+
+footer{
+    border: 2px solid #DD9922;
+    border-radius: 10px 5px 10px 5px;
+    text-align: center;
+    /* TODO: eksperimentisati sa razlicitim velicinama margine */
+    margin-bottom: 30px;
+}
+

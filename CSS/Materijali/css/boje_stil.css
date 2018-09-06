@@ -1,0 +1,28 @@
+
+#plava {
+    color: blue;
+}
+
+#narandzasta {
+    color: rgb(255, 165, 0);
+}
+
+#narandzasta-providna {
+    color: rgba(255, 165, 0, 0.5);
+}
+
+#crvena {
+    color: #ff0000;
+}
+
+#zelena {
+    color: hsl(120, 100%, 25%);
+}
+
+#zelena-providna {
+    color: hsla(120, 100%, 25%, 0.5);
+}
+
+footer {
+    text-align: center;
+}

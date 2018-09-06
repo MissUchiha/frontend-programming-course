@@ -1,0 +1,42 @@
+<html>
+	<head>
+		<title> Relativno pozicioniranje </title>
+		<style type="text/css">
+			#prvi{
+				height: 200px;
+				width: 400px;
+				background-color: rgb(3, 134, 101);
+			}
+
+			#drugi{
+				height: 200px;
+				width: 400px;
+				background-color: rgb(134, 3, 42);
+				/* 
+					element se pozicionira u odnosu na poziciju koju bi mu browser pridruzio 
+				*/
+				position:relative;
+				top: 50px;
+				left: 50px;
+				/* 
+					kontrola preklapanja elemenata 
+					eksperimentisati sa pozitivnim i negativnim vrednostima
+				*/
+				z-index: -5;
+			}
+
+			#treci{
+				height: 200px;
+				width: 400px;
+				background-color: rgb(148, 153, 6);
+			}
+
+		</style>
+	</head>
+
+	<body>
+		<div id='prvi'></div>
+		<div id='drugi'></div>
+		<div id='treci'></div>
+	</body>
+</html>

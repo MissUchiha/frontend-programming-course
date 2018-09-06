@@ -1,0 +1,54 @@
+@font-face{
+    font-family: 'TestFont';
+    src: url('../fonta/test_font.ttf');
+}
+
+main {
+    font-size: 16px;
+}
+
+#boja {
+    color: blue;
+}
+
+#razmak-slova {
+    letter-spacing: 4px;
+}
+
+#poravnanje {
+    text-align: right;
+}
+
+#razmak-reci {
+    word-spacing: 4px;
+}
+
+#dekoracija {
+    text-decoration: underline;
+}
+
+#visina {
+    line-height: 30px;
+}
+
+#velicina-slova {
+    font-size: 20px;
+}
+
+#stil {
+    font-style: italic;
+}
+
+#debljina {
+    font-weight: bold;
+}
+
+footer {
+    text-align: center;
+    font-family: 'TestFont';
+    font-size: 60px;
+}
+
+header {
+    text-align: center;
+}

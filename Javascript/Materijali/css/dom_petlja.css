@@ -1,0 +1,15 @@
+
+.tacka {
+    width:20px;
+    height:20px;
+    float:left;
+}
+
+.prazan {
+    margin: 40px;    
+    clear: both;
+}
+
+.clear-tacka {
+    clear: both;
+}

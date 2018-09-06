@@ -1,0 +1,16 @@
+#random { 
+    display:block; 
+    text-align:center;
+    font-size:80px;
+    color:purple;
+}
+    
+div {
+    font-size: 20px;
+}
+
+#odgovor {
+    margin-left: 10px;
+    font-style: italic;
+    color: darkslateblue;
+}

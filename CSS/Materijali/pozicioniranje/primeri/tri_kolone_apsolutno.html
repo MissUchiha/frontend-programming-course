@@ -1,0 +1,67 @@
+<html>
+    <head>
+        <title> Tri kolone apsolutno</title>
+        
+        <style type='text/css'>
+            #wrapper{
+                margin-left: auto;
+                margin-right: auto;
+                width: 800px;
+                position: relative;
+            }
+        
+            #header{
+                width: 800px;
+                height: 100px;
+                background-color: rgb(219, 162, 5);
+            }
+
+            #nav{
+                width: 200px;
+                height: 500px;
+                background-color: rgb(201, 37, 37);
+            }
+            
+            #content{
+                width: 300px;
+                height: 500px;
+                background-color: rgb(111, 60, 252);
+                position: absolute;
+                top:100px;
+                left:200px;
+            }
+
+            #extra_content{
+                width: 300px;
+                height: 500px;
+                background-color: rgb(88, 0, 139);
+                position: absolute; 
+                top: 100px;
+                left: 500px;
+            }   
+
+            #footer{
+                width: 800px;
+                height: 100px;
+                background-color: rgb(0, 209, 129);
+            }
+
+        </style>
+        
+    </head>
+    
+    <body>
+        <div id='wrapper'>
+            <div id='header'> </div>
+            <div id='nav'> </div> 
+            <div id='content'> </div>
+            <div id='footer'></div>
+            <!--    
+                nije vazno gde nam se element nalazi na strani
+                bitno je samo da je njegov prvi roditelj wrapper 
+                jer cemo ga pozicionirati koriscenjem apsolutnog pozicioniranja 
+            -->
+            <div id='extra_content'> </div>
+        </div> 
+    </body>
+</html>

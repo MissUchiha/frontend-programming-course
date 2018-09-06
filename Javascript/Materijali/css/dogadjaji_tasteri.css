@@ -1,0 +1,11 @@
+h1 {
+  text-align: center;
+}
+
+.slovo {
+  font-size: 40px;
+  font-weight: bold;
+  border: 1px dotted salmon;
+  height: 70px;
+  text-align: center;
+}

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Map</title>
+    </head>
+    <body>
+        <img src="Slike/061.jpg" alt="Sladoled" usemap="#sladoled">
+
+        <map name="sladoled">
+            <area shape="poly" coords="17,88,53,89,35,147" href="#kornet" alt="Kornet">
+            <area shape="circle" coords="38,45,41" href="#kugle" alt="Kugle">
+            <area shape="rect" coords="53,149,81,120" href="#doledesno" alt="Donji desni ugao">
+        </map>
+        <p>Da ne biste ručno tražili koordinate možete ih kreirati pomoću onlajn generatora kao što je <a href='https://www.image-map.net/'>ovaj</a></p>
+        <p>Name atribut u tagu map mora da se poklapa sa usemap atributom u tagu img, s tim što usemap mora da počinje sa # dok se u name # ne piše.</p>
+        <p>
+            Area tagovi mogu da imaju jednu od 3 vrednosti atributa shape: poly, circle i rect. <br>
+            Od toga koji je shape atribut u pitanju zavisi koja će vrednost biti upisana u coords atribut.
+        </p>
+        <ul>
+            <li>poly - u coords upisujemo koordinate tačaka kojima crtamo oblik, i primeru gore to smo uradili sa 3 tačke (17,88) (53,89) i (35,147) prvi broj
+                tačke je broj piksela od leve ivice slike, drugi broj je broj piskela od gornje ivice slike
+            </li>
+            <li>circle - prva 2 broja označavaju tačku u kojoj je centar kruga a 3. broj je poluprečnik</li>
+            <li>rect - dve tačke koje čine dijagonalu pravougaonika</li>
+        </ul>
+
+    </body>
+</html>

@@ -1,0 +1,82 @@
+h1, td {
+    text-align: center
+}
+
+#prva {
+    list-style-type: disc;
+    list-style-position: inside;
+}
+
+#prva > li {
+    border:  1px dotted dodgerblue;
+}
+
+#druga {
+    list-style-image: url(slike/cvet.png);
+    list-style-position: outside;
+}
+
+#druga > li {
+    border:  1px dotted dodgerblue;
+}
+
+#treca {
+    list-style: upper-roman inside;
+}
+
+ul.zebra li:nth-child(even){
+    color: peru;
+}
+
+ul.zebra li:nth-child(odd){
+    color: teal;
+}
+
+ul.zebra li:first-child {
+    color: purple;
+}
+
+caption {
+    caption-side: bottom;
+    text-align: center;
+}
+
+#velika {
+    margin: auto;
+    border: 1px solid orange;
+    border-collapse: separate;
+    border-spacing: 10px;
+    empty-cells: hide;
+}
+
+
+tr{ 
+    height: 50px;
+}
+
+td{
+    padding: 5px;
+    border: 1px solid green;
+    width: 150px;
+}
+
+/* 
+    visina vrste se prilagodjava visini najvise celije 
+    sirina kolone se prilagodjava sirini najduze celije
+*/
+
+#druga_celija {
+    background-color: hotpink;
+    width: 300px;
+    height: 100px;
+}
+
+#spojena {
+    margin: auto;
+    border: 1px dashed #B8860B;
+}
+
+.spojene {
+    background-color: paleturquoise;
+    height: 100px;
+}

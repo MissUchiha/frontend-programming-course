@@ -1,0 +1,54 @@
+@font-face{
+    font-family: 'TestFont';
+    src: url('../fonts/test_font.ttf');
+}
+
+main, footer {
+    font-size: 18px;
+}
+
+h1, footer {
+    text-align: center;
+}
+
+li > p {
+   font-size: 15px;
+}
+
+#prvo-slovo::first-letter {
+    font-family: 'TestFont';
+}
+
+#prva-linija::first-line {
+    font-family: 'TestFont';
+}
+
+a:visited {
+    color: orange;
+}
+
+a:link {
+    color: purple;
+}
+
+
+#presao:hover {
+    color: red;
+}
+
+#aktivirao:active {
+    color: blue;
+}
+
+#fokusirao:focus {
+    color: green;
+}
+
+p[lang] {
+    color: yellow;
+}
+
+p[id='lorem'] {
+    color: cyan;
+}
+

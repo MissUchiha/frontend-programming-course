@@ -1,0 +1,18 @@
+div {
+  padding-top: 50px;
+  text-align: center;
+}
+
+img {
+  width: 400px;
+  height: 400px;
+}
+
+.slika {
+  opacity: 0;
+}
+
+#sekunde {
+  font-size: 100px;
+  font-weight: bold;
+}

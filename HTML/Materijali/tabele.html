@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Tabele</title>
+    </head>
+    <body>
+        <table>
+            <tr>
+                <td>Jedna celija</td>
+            </tr>
+        </table>
+
+        <!-- 
+            Da bismo videli ćelije tabele dodaćemo atribut border, 
+            nakon što budete naučili css nemojte koristiti border atribut, 
+            osim u slučaju brzog testiranja.
+         -->
+        <table border="1">
+            <tr>
+                <td>Jedna celija</td>
+            </tr>
+        </table>
+
+        <h3>2 reda, 3 kolone</h3>
+        <!-- emmet: table>tr*2>td*3 -->
+        <table border="1">
+            <tr>
+                <td>plava</td>
+                <td>zelena</td>
+                <td>ljubicasta</td>
+            </tr>
+            <tr>
+                <td>zuta</td>
+                <td>narandzasta</td>
+                <td>crvena</td>
+            </tr>
+        </table>
+
+        <h3>3 reda, 2 kolone</h3>
+        <!-- emmet: table>tr*3>td*2 -->
+        <table border="1">
+            <tr>
+                <td>plava</td>
+                <td>zelena</td>
+            </tr>
+            <tr>
+                <td>ljubicasta</td>
+                <td>crvena</td>
+            </tr>
+            <tr>
+                <td>zuta</td>
+                <td>narandzasta</td>
+            </tr>
+        </table>
+
+
+        <h3>Caption</h3>
+        <table border="1">
+            <caption>Godisnja doba</caption>
+            <tr>
+                <th> Topla </th>
+                <th> Hladna </th>
+            </tr>
+            <tr>
+                <td>Prolece</td>
+                <td>Leto</td>
+            </tr>
+            <tr>
+                <td>Jesen</td>
+                <td>Zima</td>
+            </tr>
+        </table>
+
+        <h3>Thead, tbody, tfoot</h3>
+        <p>Sekcije html tabele možemo grupisati sa thead,tbody i tfoot tagovima, u thead upisujemo th tag umesto td</p>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Naziv</th>
+                    <th>Cena</th>
+                    <th>Kolicina</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Vegeta</td>
+                    <td>90</td>
+                    <td>100</td>
+                </tr>
+                <tr>
+                    <td>Origano</td>
+                    <td>120</td>
+                    <td>100</td>
+                </tr>
+                <tr>
+                    <td>Biber</td>
+                    <td>250</td>
+                    <td>100</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td></td>
+                    <td>dinara</td>
+                    <td>grama</td>
+                </tr>
+            </tfoot>
+        </table>
+
+        <h3>Spajanje ćelija vodoravno - colspan</h3>
+        <table border="1">
+            <tr><td>1</td><td>2</td><td>3</td></tr>
+            <tr><td colspan="2">4 i 5</td><td>6</td></tr>
+            <tr><td>7</td><td colspan="2">8 i 9</td></tr>
+            <tr><td colspan="3">10,11 i 12</td></tr>
+        </table>
+
+        <h3>Spajanje ćelija vertikalno - rowspan</h3>
+        <table border="1">
+            <tr><td rowspan="2">1 i 4</td><td>2</td><td rowspan="3">3, 6 i 9</td></tr>
+            <tr><td>5</td></tr>
+            <tr><td>7</td><td>8</td></tr>
+            <tr><td>10</td><td>11</td><td>12</td></tr>
+        </table>
+
+        <h3>COL i COLGROUP</h3>
+        <p>Služe za definisanje stilova vertikalno</p>
+        <table border="1">
+            <colgroup>
+                <col style="background: red;">
+                <col span="2" style="background: green;">
+            </colgroup>
+            <tr>
+                <td>a</td>
+                <td>b</td>
+                <td>c</td>
+            </tr>
+            <tr>
+                <td>d</td>
+                <td>e</td>
+                <td>f</td>
+            </tr>
+        </table>
+
+    </body>
+</html>

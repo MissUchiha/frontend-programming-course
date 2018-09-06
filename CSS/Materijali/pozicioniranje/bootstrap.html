@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Grid sistem</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <style type="text/css">
+
+        #boje .row>div {
+            border:solid #ccc 1px; 
+            text-align:center;
+            line-height:30px;
+        }
+        
+        #boje .row { 
+            margin-top:10px;
+        }
+        
+        #boje .row>div:nth-child(odd) { 
+            background:#555;
+            color:#fff;
+        }
+        
+        #boje .row>div:nth-child(even) { 
+            background:#cccccc;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>Bootstrap biblioteka </h1>
+    <h2>Grid sistem</h2>
+
+    <!--
+
+        .row>.col-md-1*12>{1}
+        .row>.col-md-2*6>{2}
+        .row>.col-md-3*4>{3}
+        .row>.col-md-4*3>{4}
+        .row>.col-md-6*2>{6}
+        .row>.col-md-12*1>{12}
+        .row>(.col-md-5>{5})+.col-md-7>{7}
+        .row>(.col-md-8>{8})+.col-md-4>{4}
+        .row>(.col-md-8>{8})+.col-md-4>{4}
+        .row>(.col-md-9>{9})+.col-md-3>{3}
+        .row>(.col-md-10>{10})+.col-md-2>{2}
+        .row>(.col-md-11>{11})+.col-md-1>{1}
+
+     -->
+    <div id="boje">
+        <div class="row">
+            <div class="col-md-12">12</div>
+        </div>
+        <div class="row">
+            <div class="col-md-1">1</div>
+            <div class="col-md-1">1</div>
+            <div class="col-md-1">1</div>
+            <div class="col-md-1">1</div>
+            <div class="col-md-1">1</div>
+            <div class="col-md-1">1</div>
+            <div class="col-md-1">1</div>
+            <div class="col-md-1">1</div>
+            <div class="col-md-1">1</div>
+            <div class="col-md-1">1</div>
+            <div class="col-md-1">1</div>
+            <div class="col-md-1">1</div>
+        </div>
+        <div class="row">
+            <div class="col-md-2">2</div>
+            <div class="col-md-2">2</div>
+            <div class="col-md-2">2</div>
+            <div class="col-md-2">2</div>
+            <div class="col-md-2">2</div>
+            <div class="col-md-2">2</div>
+        </div>
+        <div class="row">
+            <div class="col-md-3">3</div>
+            <div class="col-md-3">3</div>
+            <div class="col-md-3">3</div>
+            <div class="col-md-3">3</div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">4</div>
+            <div class="col-md-4">4</div>
+            <div class="col-md-4">4</div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">6</div>
+            <div class="col-md-6">6</div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">12</div>
+        </div>
+        <div class="row">
+            <div class="col-md-5">5</div>
+            <div class="col-md-7">7</div>
+        </div>
+        <div class="row">
+            <div class="col-md-8">8</div>
+            <div class="col-md-4">4</div>
+        </div>
+        <div class="row">
+            <div class="col-md-8">8</div>
+            <div class="col-md-4">4</div>
+        </div>
+        <div class="row">
+            <div class="col-md-9">9</div>
+            <div class="col-md-3">3</div>
+        </div>
+        <div class="row">
+            <div class="col-md-10">10</div>
+            <div class="col-md-2">2</div>
+        </div>
+        <div class="row">
+            <div class="col-md-11">11</div>
+            <div class="col-md-1">1</div>
+        </div>
+    </div>
+
+
+    <h2>12</h2>
+    <div class="row">
+        <div class="col-md-12">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam cum dolores dolorum ducimus ea ex impedit in molestiae nisi numquam qui quibusdam quo, rerum soluta tempore temporibus veritatis voluptatem! Id?
+            <br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet, animi consectetur cumque delectus doloremque eaque eos est id, illum incidunt ipsam maiores minima natus porro provident quibusdam vero, voluptatem voluptates!</div>
+    </div>
+    <hr>
+
+
+    <h2>6 + 6</h2>
+    <div class="row">
+        <div class="col-md-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam cum dolores dolorum ducimus ea ex impedit in molestiae nisi numquam qui quibusdam quo, rerum soluta tempore temporibus veritatis voluptatem! Id?</div>
+        <div class="col-md-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet, animi consectetur cumque delectus doloremque eaque eos est id, illum incidunt ipsam maiores minima natus porro provident quibusdam vero, voluptatem voluptates!</div>
+    </div>
+    <hr>
+
+
+    <h2>8 + 4</h2>
+    <div class="row">
+        <div class="col-md-8">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam cum dolores dolorum ducimus ea ex impedit in molestiae nisi numquam qui quibusdam quo, rerum soluta tempore temporibus veritatis voluptatem! Id?</div>
+        <div class="col-md-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet, animi consectetur cumque delectus doloremque eaque eos est id, illum incidunt ipsam maiores minima natus porro provident quibusdam vero, voluptatem voluptates!</div>
+    </div>
+    <hr>
+
+
+    <h2>9 + 3</h2>
+    <div class="row">
+        <div class="col-md-9">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam cum dolores dolorum ducimus ea ex impedit in molestiae nisi numquam qui quibusdam quo, rerum soluta tempore temporibus veritatis voluptatem! Id?</div>
+        <div class="col-md-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet, animi consectetur cumque delectus doloremque eaque eos est id, illum incidunt ipsam maiores minima natus porro provident quibusdam vero, voluptatem voluptates!</div>
+    </div>
+    <hr>
+
+
+    <h2>2 + 8 +2</h2>
+    <div class="row">
+        <div class="col-md-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam cum dolores dolorum ducimus ea ex impedit in molestiae nisi numquam qui quibusdam quo, rerum soluta tempore temporibus veritatis voluptatem! Id?</div>
+        <div class="col-md-8">
+            <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid et itaque magni modi perspiciatis? At cum delectus excepturi
+                praesentium quo saepe voluptates? Autem excepturi, quisquam. Harum rem tenetur unde vel!
+            </div>
+            <div>Aliquid aspernatur aut autem debitis eaque error facere fugit impedit molestiae mollitia natus obcaecati perferendis placeat porro
+                praesentium, quis ratione sapiente sed totam ullam. Doloremque est mollitia nam provident voluptatum.
+            </div>
+            <div>Explicabo impedit, inventore! Deserunt dolor enim in maiores sapiente! Assumenda consectetur corporis debitis deleniti, facere fugiat
+                in maxime nobis nostrum numquam officia officiis perferendis possimus quaerat quidem ullam veritatis voluptate!
+            </div>
+            <div>Consectetur corporis doloremque ducimus, earum eius eos eum ipsa maxime nisi non praesentium, quia quidem quos reiciendis saepe
+                totam, unde vero voluptas voluptate voluptates! Dicta nulla officia qui voluptatem voluptatibus?
+            </div>
+            <div>A aperiam architecto at autem, commodi consectetur culpa cupiditate eius enim et id incidunt laborum magni nam nesciunt nihil nulla
+                numquam, odio optio quas quisquam recusandae similique sit sunt tenetur.
+            </div>
+        </div>
+        <div class="col-md-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet, animi consectetur cumque delectus doloremque eaque eos est id, illum incidunt ipsam maiores minima natus porro provident quibusdam vero, voluptatem voluptates!</div>
+    </div>
+    <hr>
+
+
+    <h2>6 + 6</h2>
+    <div class="row">
+        <div class="col-md-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam cum dolores dolorum ducimus ea ex impedit in molestiae nisi numquam qui quibusdam quo, rerum soluta tempore temporibus veritatis voluptatem! Id?</div>
+        <div class="col-md-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet, animi consectetur cumque delectus doloremque eaque eos est id, illum incidunt ipsam maiores minima natus porro provident quibusdam vero, voluptatem voluptates!</div>
+    </div>
+    <hr>
+
+
+    <h2>3 + 3 + 3 + 3 </h2>
+    <div class="row">
+        <div class="col-md-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam cum dolores dolorum ducimus ea ex impedit in molestiae nisi numquam qui quibusdam quo, rerum soluta tempore temporibus veritatis voluptatem! Id?</div>
+        <div class="col-md-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet, animi consectetur cumque delectus doloremque eaque eos est id, illum incidunt ipsam maiores minima natus porro provident quibusdam vero, voluptatem voluptates!</div>
+        <div class="col-md-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam cum dolores dolorum ducimus ea ex impedit in molestiae nisi numquam qui quibusdam quo, rerum soluta tempore temporibus veritatis voluptatem! Id?</div>
+        <div class="col-md-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam cum dolores dolorum ducimus ea ex impedit in molestiae nisi numquam qui quibusdam quo, rerum soluta tempore temporibus veritatis voluptatem! Id?</div>
+    </div>
+    <hr>
+
+
+
+</div>
+</body>
+</html>

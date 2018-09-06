@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> CSS stilizovanje teksta  </title> 
+        <meta charset='UTF-8'>        
+        <link rel='stylesheet' href='css/tekst_stil.css'>               
+    </head>
+    
+    <body>
+
+        <header> 
+            <h1> CSS stilizovanje teksta </h1> 
+        </header>
+        
+        <main>
+            <h2>Merne jedinice</h2>
+            <p>
+                <ul>
+                    <li>
+                        <pre>px</pre> - piksel (označava tačku na monitoru)
+                    </li>
+                    <li>
+                        <pre>%</pre> - jedan procenat maksimalne širine elementa
+                    </li>
+                    <li>
+                        <pre>vw</pre> – procenat (%) širine HTML dokumenta (ne mora biti širina ekrana) 
+                    </li>
+                    <li>
+                        <pre>vh</pre> - procenat (%) visine html dokumenta
+                    </li>
+                    <li>
+                        <pre>vmin</pre> - procenat (%) manje dimenzija html dokummenta
+                    </li>
+                    <li>
+                        <pre>vmax</pre> - procenat (%) veće dimenizija html dokumenta
+                    </li>
+                    <li>
+                        <pre>em</pre> - širina slova "m" u trenutnom fontu
+                    </li>
+                </ul>
+                Postoje I druge jedinice koje verovatno nećete koristiti ali treba ih prepoznati (pt, cm, mm, in, ex, ...)
+            </p>
+            
+            <h2>Stilizovanje teksta</h2>
+            <p>
+                <ul>
+                    <li>
+                        <pre>color</pre> - boja 
+                        <br><br>
+                        <span id="boja"> 
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.   
+                        </span>
+                    </li>
+                    <li>
+                        <pre>letter-spacing</pre> - razmak izmedju slova 
+                        <br><br>
+                        <span id="razmak-slova">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.   
+                        </span>
+                    </li>
+                    <li>
+                        <pre>text-align</pre> - horizontalno poravnanje teksta 
+                        <br><br>
+                        <span id="poravnanje"> 
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.   
+                        </span>
+                    </li>
+                    <li>
+                        <pre>word-spacing</pre> - razmak izmedju reči 
+                        <br><br>
+                        <span id="razmak-reci"> 
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.   
+                        </span>
+                    </li>
+                    <li>
+                        <pre>text-decoration</pre> - dekoracija slova 
+                        <br><br>
+                        <span id="dekoracija"> 
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.   
+                        </span>    
+                    </li>
+                    <li> 
+                        <pre>line-height</pre> - visina prostora za slova 
+                        <br><br>
+                        <span id="visina"> 
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.   
+                        </span>
+                    </li>
+                    <li>
+                        <pre>font-size</pre> - veličina slova
+                        <br><br>
+                        <span id="velicina-slova"> 
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.   
+                        </span>    
+                    </li>
+                    <li>
+                        <pre>font-style</pre> - stil fonta 
+                        <br><br>
+                        <span id="stil"> 
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.   
+                        </span>    
+                    </li>
+                    <li>
+                        <pre>font-weight</pre> - debljina fonta 
+                        <br><br>
+                        <span id="debljina"> 
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.   
+                        </span>    
+                    </li>
+                </ul>
+            </p>
+            <h2> Font </h2>
+            <p>
+                Pomoću <em>font-family</em> možemo navesti font koji želimo ili više njih razdvojene zarezom (ukoliko browser ne podržava prvi, primeniće se sledeći i tako redom) 
+                <pre>   font-family: "Times New Roman", Georgia, Serif </pre>
+
+                Za zadavanje novog font koristimo sledeće CSS pravilo
+                
+                <pre>   @font-face {    
+        font-family: ime_novog_fonta;
+        src: url(putanja_do_fonta);
+    }</pre>
+                Na ovaj način smo uključili font koji se nalazi u datoteci <em>putanja_do_fonta</em> i nazvali smo ga <em>ime_novog_fonta</em>.
+                <br>
+                Ukoliko želimo da iskoristimo ovaj font, pravilu <em>font-family</em> dajemo vrednost <em>ime_novog_fonta</em>.
+                <pre>   font-family: ime_novog_fonta;</pre>
+            </p>
+
+
+        </main>
+        
+    </body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html >
+
+<html>
+	<head>
+		<title> Liste i tabele </title> 
+		
+		<meta	charset='UTF-8' />
+
+        <link rel="stylesheet" href="css/liste_tabele_stil.css">   
+			
+	</head>
+
+	<body>
+		<h1> Liste </h1>
+			
+		<ul id="prva"> 
+			<li> stavka .. </li>
+			<li> stavka .. </li>
+			<li> stavka .. </li>
+			<li> stavka .. </li>
+		</ul>
+
+		<ul id="druga"> 
+			<li> stavka .. </li>
+			<li> stavka .. </li>
+			<li> stavka .. </li>
+			<li> stavka .. </li>
+		</ul>
+
+		<ol id="treca"> 
+			<li> stavka .. </li>
+			<li> stavka .. </li>
+			<li> stavka .. </li>
+			<li> stavka .. </li>
+		</ol>
+		
+		<ul class='zebra'>
+			<li> stavka... </li>
+			<li> stavka....</li>
+			<li> stavka....</li>
+			<li> stavka....</li>
+			<li> stavka....</li>
+		</ul>
+
+		<h1> Tabele </h1>
+		
+		<table id="velika"> 
+			<caption> Naslov </caption>
+			<tr> 
+				<td> 1 </td>
+				<td id="druga_celija"> 2 </td>
+				<td>  </td>	 
+			</tr>
+			<tr> 
+				<td> 4 </td>
+				<td> 5  </td>
+				<td> 6 </td>	 
+			</tr>
+		</table>
+
+		<table id="spojena"> 
+			<tr>
+				<td class="spojene" rowspan="2"> 1, 4 </td>
+				<td class="spojene" colspan="2"> 2, 3 </td>
+			</tr>
+			<tr>
+				<td> 5 </td>
+				<td> 6 </td>
+			</tr>
+		</table> 
+	</body>
+</html>
+
